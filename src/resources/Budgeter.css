@@ -1,0 +1,88 @@
+
+.root{
+    -fx-primary: white;
+    -fx-primary-text: black;
+    -fx-secondary: #28B463 ;
+	
+    -fx-background-color: -fx-primary;
+
+}
+
+.textfield{
+    
+    -fx-border-color: -fx-secondary;
+    -fx-background-radius: 5px;
+    -fx-text-fill: -fx-primary-text;
+    -fx-prompt-text-fill: -fx-primary-text;
+    -fx-border-radius: 5px;
+}
+
+.button{
+
+    -fx-background-color: -fx-secondary;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.datefield{
+
+    -fx-text-fill: -fx-primary-text;
+    -fx-prompt-text-fill: -fx-primary-text;
+    -fx-border-radius: 20px;
+}
+
+.datefield .text-field {
+
+    -fx-text-fill: -fx-primary-text;
+    -fx-prompt-text-fill: -fx-primary-text;
+}
+
+.tab{
+
+    -fx-pref-width: 125;
+    -fx-pref-height: 40;
+    -fx-text-base-color: -fx-primary-text;
+	-fx-font-weight: bold;
+	-fx-font-size: 13px;
+    -fx-background-color: -fx-secondary;
+
+}
+
+.tab-header-background {
+
+    -fx-background-color: -fx-secondary;	
+
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected {
+    -fx-background-color: derive(-fx-secondary, 80%);
+	
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab {
+    -fx-background-insets: 0px;
+    -fx-background-radius: 10px 10px 0px 0px;
+	-fx-border-radius: 10px 10px 0px 0px;
+    -fx-padding: 0.083333em 0.5em 0.0769em 0.5em; /* 1 6 0.99 6 */
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-width: 1, 1;
+    -fx-border-color: -fx-secondary;
+    -fx-border-insets: -6px;
+    -fx-border-radius: 10px 10px 0px 0px; /* looks sharper if outer border has a tighter radius (2 instead of 3) */
+}
+
+.table-view .column-header{
+    -fx-background-color: derive(-fx-secondary, 80%);
+    -fx-background-insets: 0, 0 1 1 0, 1 2 2 1;
+    -fx-font-weight: bold;
+    -fx-size: 2em;
+    -fx-text-fill: -fx-selection-bar-text;
+    -fx-padding: 0.166667em;
+}
+
+.glyph-icon {
+	
+	-fx-fill: -fx-secondary;
+}
